@@ -1,0 +1,50 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+.my-name {
+  font-family: "Poppins", sans-serif;
+  margin-left: 15px;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: auto;
+}
+.navbar ul li {
+  transition: 0.5s;
+}
+.navbar ul li:hover {
+  transform: scale(1.11);
+
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    background-color: black;
+  }
+  .navbar ul{
+   max-width: 0;
+   max-height: 0;
+  }
+}

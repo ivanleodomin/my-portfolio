@@ -1,0 +1,74 @@
+.image-container {
+  background-image: url("../images/banner.jpg");
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -25px;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.91;
+  filter: brightness(50%);
+  top: 0;
+}
+
+.info {
+  padding: 5px;
+  height: 75vh;
+  position: relative;
+  text-align: center;
+  display: block;
+  opacity: 1;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.info h1 {
+  color: #44d8a6;
+  font-size: 70px;
+}
+
+.info p {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.info a {
+  text-decoration: none;
+  color: #742cf1;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #742cf1;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+.info a:hover {
+  background-color: #742cf1;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .info{
+    margin-top: 150px
+  }
+  .info h1 {
+    font-size: 30px;
+  }
+  .info p a {
+    font-size: 10px;
+    margin-bottom:20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .info h1 {
+    font-size: 40px;
+  }
+  .info p a {
+    font-size: 15px;
+  }
+}
